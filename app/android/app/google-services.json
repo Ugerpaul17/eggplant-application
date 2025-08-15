@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "340678487127",
+    "project_id": "egg-plant-disease-control",
+    "storage_bucket": "egg-plant-disease-control.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340678487127:android:16feece1a3749bda5fc712",
+        "android_client_info": {
+          "package_name": "com.example.susya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340678487127-m1qbmljvbebobif3og8n7mmv47qgc7ij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.susya",
+            "certificate_hash": "bff0fd278102f552fdc3c9a7e9559feeb7bbea04"
+          }
+        },
+        {
+          "client_id": "340678487127-albd14i7p2k7eqj449m35gomgc7h21em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT0jiRw4nBTIh5QDoCalUSstWs3GSF9Jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340678487127-albd14i7p2k7eqj449m35gomgc7h21em.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "340678487127-lohqivl5pcc9dim393428ea96hcvl1fg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.susya"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
