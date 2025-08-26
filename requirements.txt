@@ -1,13 +1,18 @@
 Flask==3.0.3
 gunicorn==23.0.0
 
+# PyTorch + Vision (compatible with Python 3.11)
 torch==2.5.1
-torchvision==0.20.1
-torchaudio==2.5.1
+torchvision==0.20.0
 
+# Image processing
+pillow==10.3.0
+
+# Common scientific/ML deps (safe versions for Torch)
 numpy==1.26.4
-pandas==2.2.2
-Pillow==10.3.0
-scikit-learn==1.5.2
-matplotlib==3.9.2
-requests==2.32.3
+typing_extensions==4.12.2
+jinja2==3.1.4
+werkzeug==3.0.4
+itsdangerous==2.2.0
+click==8.1.7
+
