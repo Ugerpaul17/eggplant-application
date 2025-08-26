@@ -1,5 +1,6 @@
 # Core dependencies
 flask==3.0.3
+Flask-Cors==4.0.0
 gunicorn==23.0.0
 
 # PyTorch CPU build (compatible with Python 3.13)
