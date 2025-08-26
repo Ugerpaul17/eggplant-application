@@ -1,13 +1,16 @@
+# Core server
 Flask==3.0.3
-gunicorn==23.0.0
+gunicorn==21.2.0
 
-torch==2.5.1
-torchvision==0.20.1
-pillow==10.3.0
+# Machine Learning
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+
+# Utilities
 numpy==1.26.4
-typing_extensions==4.12.2
-jinja2==3.1.4
-werkzeug==3.0.4
-itsdangerous==2.2.0
-click==8.1.7
+Pillow==10.3.0
+
+# (Optional: if you use Pandas for preprocessing)
+pandas==2.2.2
 
