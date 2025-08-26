@@ -7,6 +7,14 @@ gunicorn==23.0.0
 torch==2.5.1
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-# (Optional) If you use torchvision/torchaudio
+# ML / image processing
+numpy==1.26.4
+Pillow==10.3.0
+
+# (Optional: uncomment if used in your code)
 # torchvision==0.20.1
 # torchaudio==2.5.1
+# pandas==2.2.2
+# scikit-learn==1.5.1
+# joblib==1.4.2
+
