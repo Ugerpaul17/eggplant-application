@@ -1,12 +1,11 @@
-pandas
--f https://download.pytorch.org/whl/torch_stable.html                                                                                                                                                             
-torch==1.8.0+cpu
-torchvision
-numpy
-matplotlib
-flask==2.0.0
-seaborn
-gunicorn
-flask-cors
-pyfcm
-python-decouple
+# Core dependencies
+flask==3.0.3
+gunicorn==23.0.0
+
+# PyTorch CPU build (compatible with Python 3.13)
+torch==2.5.1
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# (Optional) If you use torchvision/torchaudio
+# torchvision==0.20.1
+# torchaudio==2.5.1
