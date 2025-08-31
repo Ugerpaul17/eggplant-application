@@ -15,7 +15,7 @@ Future<dynamic> sendToPredictor(imagePath) async {
     'image': imageBase64,
   }); */
   final response =
-      await dio.post("https://ruling-terrapin-vaguely.ngrok-free.app/", data: {
+      await dio.post("https://eggplant-application.onrender.com", data: {
     'image': imageBase64,
   });
 
