@@ -8,6 +8,12 @@ import torch.nn.functional as F
 import pickle
 import io
 import json
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, 'data.json')
+MODEL_PATH = os.path.join(BASE_DIR, 'model.pth')
+LABELS_PATH = os.path.join(BASE_DIR, 'labels.json')
 
 # Model class to define the architecture
 class Network(nn.Module):
@@ -59,8 +65,8 @@ class Network(nn.Module):
 
 
 def get_remedy(plant_disease):
-    with open("model_files/data.json", 'r') as f:
-	    remedies = json.load(f)
+    with open(DATA_PATH, "r") as f:
+        remedies = json.load(f)
     # Get remedy for the given plant disease
     for key in remedies:
         if key == plant_disease:
@@ -70,11 +76,11 @@ def get_remedy(plant_disease):
 # to avoid gradients update
 @torch.no_grad()
 def predict_plant(model,imgdata):
-    with open('model_files/labels.json', 'rb') as lb:
+    with open(LABELS_PATH, "rb") as lb:
         labels = pickle.load(lb)
 
     loaded_model = model
-    loaded_model.load_state_dict(torch.load("model_files/model.pth"))
+    loaded_model.load_state_dict(torch.load(MODEL_PATH, map_location="cpu"))
     loaded_model.eval()
 
     # Converting Base64 string to Image
