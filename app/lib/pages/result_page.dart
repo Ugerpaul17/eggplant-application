@@ -20,6 +20,13 @@ class ResultPage extends StatefulWidget {
 
 class _ResultPageState extends State<ResultPage> {
   var isLoading = false;
+
+  Future<void> sendAlerts({required String plant, required String disease}) async {
+    // TODO: Implement the alert sending logic here, e.g., call an API or service.
+    // Example placeholder:
+    await Future.delayed(Duration(seconds: 1));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
